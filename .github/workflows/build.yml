@@ -65,6 +65,9 @@ jobs:
             name: my-artifact
             path: ./my-artifact.tar.gz
 
+        - name: 'List Folders'
+          run: ls
+          
         - name: 'Downlaod Artifact'
           uses: actions/download-artifact@v2
           with:
