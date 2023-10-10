@@ -56,11 +56,17 @@ jobs:
         - name: 'List Folders'
           run: ls
 
+        - name: Extract .tgz file
+          run: tar -xvzf nimble-ice-0.0.1.tgz
+
+        - name: 'List Folders'
+          run: ls
+
         - name: 'Archive Artifact'
           uses: actions/upload-artifact@v2
           with:
             name: my-artifact
-            path: nimble-ice-0.0.1.tgz
+            path: ./
 
         - name: 'Downlaod Artifact'
           uses: actions/download-artifact@v2
