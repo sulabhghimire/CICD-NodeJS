@@ -51,7 +51,7 @@ jobs:
           run: npm install
       
         - name: 'Build Artifact'
-          run: npm build
+          run: npm run build
 
         - name: 'Archive Artifact'
           uses: actions/upload-artifact@v2
