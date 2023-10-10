@@ -57,7 +57,7 @@ jobs:
           uses: actions/upload-artifact@v2
           with:
             name: my-artifact
-            path: nimble-ice-0.0.1.tgz
+            path: ./web/dist
 
         - name: 'Downlaod Artifact'
           uses: actions/download-artifact@v2
