@@ -59,12 +59,6 @@ jobs:
         - name: 'Create TAR Archive'
           run: tar czf my-artifact.tar.gz ./nimble-ice-0.0.1.tgz
 
-        - name: 'Upload Artifact'
-          uses: actions/upload-artifact@v2
-          with:
-            name: my-artifact
-            path: web/my-artifact.tar.gz
-
         - name: 'List Folders'
           run: ls
 
