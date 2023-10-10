@@ -1,6 +1,6 @@
 # Simple Web App
 
-This is a simple NodeJs web app built on top of express.js framework to test CI/CD Process.
+This is a simple NodeJs web app built on top of express.js framework to test CI/CD process.
 
 ## Setup
 
