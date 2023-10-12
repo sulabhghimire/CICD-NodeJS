@@ -65,5 +65,8 @@ jobs:
             name: my-artifact
             path: web/nimble-ice-0.0.1.tgz
 
+        - name: 'Change the diectory'
+          run: cd ../dist
+
         - name: 'List Folders'
           run: ls
