@@ -57,7 +57,7 @@ jobs:
           run: mkdir ../dist
 
         - name: 'Extract Artifact to Another Folder'
-          run: tar -xzvf web/nimble-ice-0.0.1.tgz -C ../dist
+          run: tar -xzvf nimble-ice-0.0.1.tgz -C ../dist
 
         - name: 'Upload Artifact'
           uses: actions/upload-artifact@v2
