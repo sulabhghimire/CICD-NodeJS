@@ -13,3 +13,7 @@ npm run test
 # Run the app
 npm run start
 ```
+
+TO run the docker container do:
+ - docker build . -t sulabh/node-web-app:v1
+ - docker run -d -p 8001:5000 sulabh/node-web-app:v1

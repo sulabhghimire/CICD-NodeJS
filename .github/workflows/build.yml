@@ -56,19 +56,8 @@ jobs:
         - name: 'Create a new folder called dist'
           run: mkdir ../dist
 
-        - name: 'Extract Artifact to Another Folder'
-          run: tar -xzvf nimble-ice-0.0.1.tgz -C ../dist
-
         - name: 'Upload Artifact'
           uses: actions/upload-artifact@v2
           with:
             name: my-artifact
             path: web/nimble-ice-0.0.1.tgz
-
-        - name: 'Change the diectory'
-          run: |
-            cd ../dist |
-            ls
-
-        - name: 'List Folders'
-          run: ls
